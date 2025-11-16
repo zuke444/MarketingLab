@@ -1,7 +1,11 @@
 body{
     background-color: rgb(54, 54, 54);
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 h1{
@@ -20,6 +24,12 @@ hr{
    margin-bottom: 50px;
 }
 
+header{
+    z-index:1000;
+    top: 0;
+    position: sticky;
+}
+
 .logo{
     color: darkseagreen;
     font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
@@ -31,17 +41,14 @@ hr{
     color: rgb(54, 54, 54);
 }
 
-.navbar{
+nav {
     background-color: beige;
     display: flex;
     padding-right: 15px;
     padding-left: 15px;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
     height: 80px;
-    position: sticky;
-    top: 0;
     left: 0;
     width: 100%;
 }
@@ -73,7 +80,7 @@ hr{
         margin-bottom: 5px;
         margin-top: 5px;
     }
-    .navbar{
+    nav{
         height: auto;
     }
     .footer{
@@ -92,7 +99,9 @@ input{
 
 .headimage {
   position: relative;
-  display: inline-block;
+  display: block; 
+  width: 100%;
+  z-index: 1;
 }
 
 .headimage img {
