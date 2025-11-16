@@ -67,6 +67,10 @@
   font-size: 1rem;
 }
 
+.contact-form button a:active{
+  background-color: darkolivegreen;
+}
+
 ::placeholder{
     font-family: "Montserrat";
 }

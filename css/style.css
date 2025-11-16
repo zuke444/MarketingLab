@@ -4,14 +4,10 @@ body{
     overflow-x: hidden; 
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 h1{
     color: darkseagreen;
     font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 3vw;
     display: flex;
     justify-content: center;
 }
@@ -33,7 +29,7 @@ header{
 .logo{
     color: darkseagreen;
     font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
-    margin-left: 15px;
+    margin-left: 50px;
     margin-right:50px;
 }
 
@@ -140,7 +136,7 @@ input{
   left: 50%;
   color: beige;
   transform: translate(-50%, -50%);
-  font-size: 2vw;
+  font-size: 15px;
   font-family: "Montserrat";
   font-weight: bolder;
   text-align: center;
@@ -163,6 +159,16 @@ p{
     font-weight: bolder;
 }
 
+.img-link img {
+  display: block;         
+  width: 100%;           
+  transition: box-shadow 0.3s ease; 
+}
+
+.img-link:hover img {
+  box-shadow: 10px 10px 10px black;
+}
+
 .itlc{
     font-style: italic;
     text-align: center;
@@ -180,21 +186,22 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: beige;
-    height: 400px;
+    height: auto;
     margin-top: 80px;
 }
 
 .footertext{
     text-decoration-color: rgb(34, 34, 34);
     font-family: "Montserrat" "consolas", Arial, Helvetica, sans-serif;
-    font-size: 23px;
+    font-size: larger;
+    padding: 20px;
 }
 
 .ftrp{
     color: rgb(54, 54, 54);;
     margin-left: 0px;
     margin-right: 0px;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     align-items: center;
     justify-content: center;

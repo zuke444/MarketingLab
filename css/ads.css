@@ -4,11 +4,13 @@ h3{
     font-size: 30px;
     display: flex;
     justify-content: left;
+    padding: 20px;
 }
 
 .hh3{
     justify-content: center;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .hp{
@@ -21,7 +23,7 @@ h3{
   justify-content: space-between; 
   align-items: flex-start;
   margin: 50px auto;
-  max-width: 1200px;       
+  max-width: 90%;       
   padding: 0 20px;
   gap: 20px; 
   flex-direction: row;             
@@ -40,7 +42,9 @@ h3{
 }
 
 .karta p{
-  text-align: center;        
+  text-align: center;
+  margin-left: 0; 
+  margin-right: 0;       
 }
 
 .karta img {
@@ -102,7 +106,7 @@ table{
 thead th {
   color: beige;
   padding: 15px;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 thead th:nth-child(1) { background-color: #bab847; }
@@ -112,6 +116,7 @@ tbody td {
   padding: 12px 15px;
   border-bottom: 1px solid beige;
   color: beige;
+  font-size: 1.5vw;
 }
 
 tbody tr:nth-child(odd) {

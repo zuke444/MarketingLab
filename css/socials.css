@@ -4,11 +4,13 @@ h3{
     font-size: 30px;
     display: flex;
     justify-content: left;
+    padding: 20px;
 }
 
 .hh3{
     justify-content: center;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .hp{
@@ -49,7 +51,7 @@ table{
 thead th {
   color: beige;
   padding: 15px;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 tbody td:nth-child(1) {background-color: #bab847;}
@@ -58,6 +60,7 @@ tbody td {
   padding: 12px 15px;
   border-bottom: 1px solid beige;
   color: beige;
+  font-size: 1.5vw;
 }
 
 tbody tr:nth-child(odd) {
@@ -75,8 +78,8 @@ tbody tr:last-child td {
   flex-wrap: wrap;         
   justify-content: space-between; 
   align-items: flex-start;
-  margin: 50px auto;
-  max-width: 1200px;       
+  margin:  auto;
+  max-width: 90%;       
   padding: 0 20px;
   gap: 20px; 
   flex-direction: row;             
@@ -93,6 +96,12 @@ tbody tr:last-child td {
   border-radius: 15px;
   padding: 20px;
   min-width: 220px;           
+}
+
+.karta p{
+  text-align: center;
+  margin-left: 0; 
+  margin-right: 0;       
 }
 
 .karta img {
@@ -134,5 +143,5 @@ tbody tr:last-child td {
   text-align: center;
   justify-content: center;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 15px;
 }
