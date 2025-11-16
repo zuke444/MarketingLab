@@ -1,0 +1,86 @@
+.two-columns {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background: rgb(34, 34, 34);
+  border-radius: 20px;
+  padding: 40px;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.divider {
+  width: 1px;
+  background: beige;
+}
+
+.left-column h2,
+.right-column h2 {
+  margin-top: 0;
+  font-family: "Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
+  color: beige;
+}
+
+.ch{
+    color: beige;
+    font-family: "Montserrat";
+    margin-top: 40px;
+}
+
+.left-column ul {
+  padding-left: 20px;
+  color: beige;
+  font-family: "Montserrat";
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(34, 34, 34);
+  background: beige;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: darkseagreen;
+  color: beige;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+::placeholder{
+    font-family: "Montserrat";
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .two-columns {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+

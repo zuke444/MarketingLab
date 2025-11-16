@@ -1,0 +1,138 @@
+h3{
+    color: beige;
+    font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.hh3{
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hp{
+   text-align: center;
+}
+
+.ch{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+h4{
+    color: beige;
+    font-family: "Montserrat";
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+table{
+  justify-content: center;
+  border-spacing: 0;
+  overflow: hidden; 
+  text-align: left;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: "Montserrat";
+  align-items: flex-start;
+}
+
+thead th {
+  color: beige;
+  padding: 15px;
+  font-size: 20px;
+}
+
+tbody td:nth-child(1) {background-color: #bab847;}
+
+tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid beige;
+  color: beige;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(0,0,0,0.2);
+}
+tbody tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.1);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;}
+
+.socialnisite{
+  display: flex;           
+  flex-wrap: wrap;         
+  justify-content: space-between; 
+  align-items: flex-start;
+  margin: 50px auto;
+  max-width: 1200px;       
+  padding: 0 20px;
+  gap: 20px; 
+  flex-direction: row;             
+}
+
+.karta {
+  flex: 1 1 calc(25% - 20px); 
+  box-sizing: border-box;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 220px;           
+}
+
+.karta img {
+  height: 200px;
+  width: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.karta h3 {
+  color: beige;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.karta ul {
+  list-style: disc inside;
+  color: beige;
+  text-align: left;
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+  .karta {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .karta {
+    flex: 1 1 100%;
+  }
+}
+
+.link{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: larger;
+}

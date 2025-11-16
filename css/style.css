@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+}
+
+h1{
+    color: darkseagreen;
+    font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+   border: none;
+   height: 2px; 
+   background-color: beige;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.logo{
+    color: darkseagreen;
+    font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    margin-right:50px;
+}
+
+.logo2{
+    color: rgb(54, 54, 54);
+}
+
+.navbar{
+    background-color: beige;
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbutons a{
+    display: inline-block;
+    height: 45px;
+    width: 120px;
+    line-height: 45px;
+    text-align: center;
+    font-family: "Montserrat", "consolas", Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    color: beige;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+@media(max-width:1438px){
+    .navbutons a {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .navbar{
+        height: auto;
+    }
+    .footer{
+        height: auto;
+    }
+}
+
+.navbutons a:active,
+.navbutons a:focus {
+    background-color: darkolivegreen;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.headimage {
+  position: relative;
+  display: inline-block;
+}
+
+.headimage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.nadpis {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  text-align: center;
+  color: beige;
+  font-family: "Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
+}
+
+.podnadpis {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  color: beige;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  text-align: center;
+}
+
+.podnadpis2 {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  color: beige;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  text-align: center;
+}
+
+p{
+    color: beige;
+    font-family: "Montserrat";
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 40px;
+    font-size: larger;
+    text-align: justify;
+}
+
+.bold{
+    color: beige;
+    font-family: "Montserrat";
+    text-align: justify;
+    font-weight: bolder;
+}
+
+.itlc{
+    font-style: italic;
+    text-align: center;
+}
+
+a{
+    color: darkseagreen;
+    font-family: "Montserrat";
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.footertext{
+    text-decoration-color: rgb(34, 34, 34);
+    font-family: "Montserrat" "consolas", Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}
+
+.ftrp{
+    color: rgb(54, 54, 54);;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:800px){
+    .navdiv{
+        flex-direction: column;
+    }
+
+}

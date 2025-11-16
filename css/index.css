@@ -1,0 +1,91 @@
+.headerphoto{
+    width: 100%; 
+}
+
+.pics3{
+    width: 50%;
+    padding-top: 40px;
+    margin-right: 70px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    float: right;
+}
+
+@media(max-width:1230px){
+    .pics3{
+       width: 100%;
+       float: center;
+       margin-right: 0px;
+    }
+    .h3uvod{
+        left: 50%;
+    }
+}
+
+#h3uvod{
+  margin-left: 80px;
+  margin-top: 50px;
+  color: beige;
+  font-size: 50px;
+  padding: 1rem 2rem;
+  font-family: "Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.karty{
+  display: flex;           
+  flex-wrap: wrap;         
+  justify-content: space-between; 
+  align-items: flex-start;
+  margin: 50px auto;
+  max-width: 1200px;       
+  padding: 0 20px;
+  gap: 20px; 
+  flex-direction: row;             
+}
+
+.karta {
+  flex: 1 1 calc(30% - 20px); 
+  box-sizing: border-box;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 20px;          
+}
+
+.karta p{
+  text-align: center;        
+}
+
+.karta img {
+  height: 200px;
+  width: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.karta h3 {
+  color: beige;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .karta {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .karta {
+    flex: 1 1 100%;
+  }
+}
+
