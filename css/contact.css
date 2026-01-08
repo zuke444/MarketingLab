@@ -63,11 +63,11 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  width: 100px  ;
+  width: 100px;
   font-size: 1rem;
 }
 
-.contact-form button a:active{
+.contact-form button:active{
   background-color: darkolivegreen;
 }
 

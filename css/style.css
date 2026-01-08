@@ -8,8 +8,7 @@ h1{
     color: darkseagreen;
     font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
     font-size: 3vw;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 hr{
@@ -71,6 +70,11 @@ nav {
     transition: background-color 0.2s;
 }
 
+.navbutons a.active {
+    background-color: darkolivegreen;
+    pointer-events: none; 
+}
+
 @media(max-width:1438px){
     .navbutons a {
         margin-bottom: 5px;
@@ -95,15 +99,17 @@ input{
 
 .headimage {
   position: relative;
-  display: block; 
+  display: block;
+  max-height: 50vh;
+  overflow: hidden; 
   width: 100%;
   z-index: 1;
 }
 
 .headimage img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 60vh;
+  object-fit: cover;
 }
 
 
@@ -112,7 +118,7 @@ input{
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4vw;
+  font-size: 4vh;
   text-align: center;
   color: beige;
   font-family: "Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
@@ -124,7 +130,7 @@ input{
   left: 50%;
   color: beige;
   transform: translate(-50%, -50%);
-  font-size: 2vw;
+  font-size: 3vh;
   font-family: "Montserrat";
   font-weight: bolder;
   text-align: center;
@@ -147,7 +153,8 @@ p{
     font-family: "Montserrat";
     margin-left: 70px;
     margin-right: 70px;
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
     font-size: larger;
     text-align: justify;
 }
@@ -191,14 +198,15 @@ footer{
 }
 
 .footertext{
-    text-decoration-color: rgb(34, 34, 34);
-    font-family: "Montserrat" "consolas", Arial, Helvetica, sans-serif;
+    color: rgb(34, 34, 34);
+    font-family: "Montserrat", "consolas", Arial, Helvetica, sans-serif;
     font-size: larger;
     padding: 20px;
 }
 
 .ftrp{
-    color: rgb(54, 54, 54);;
+    color: rgb(54, 54, 54);
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     font-size: 15px;
@@ -212,4 +220,40 @@ footer{
         flex-direction: column;
     }
 
+}
+
+@media print {
+    header, 
+    nav, 
+    footer, 
+    .navbutons, 
+    .contact-form,
+    button {
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    p, h1, h2, h3, h4, li, td, th {
+        color: black !important;
+    }
+
+    p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    table {
+        width: 100% !important;
+        margin: 20px 0 !important;
+        border: 1px solid black !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
 }

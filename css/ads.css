@@ -2,8 +2,8 @@ h3{
     color: beige;
     font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
     font-size: 30px;
-    display: flex;
-    justify-content: left;
+    text-align: left;
+    justify-content: flex-start;
     padding: 20px;
 }
 
@@ -82,14 +82,13 @@ h4{
     color: beige;
     font-family: "Montserrat";
     font-size: 25px;
-    display: flex;
-    justify-content: left;
+    text-align: left;
+    justify-content: flex-start;
     margin-left: 70px;
     margin-top: 50px;
 }
 
 table{
-  justify-content: center;
   border-spacing: 0;
   overflow: hidden; 
   text-align: left;
@@ -100,7 +99,6 @@ table{
   margin-top: 80px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   font-family: "Montserrat";
-  align-items: flex-start;
 }
 
 thead th {
@@ -110,7 +108,7 @@ thead th {
 }
 
 thead th:nth-child(1) { background-color: #bab847; }
-thead th:nth-child(2) { background-color: #f3b249;; }
+thead th:nth-child(2) { background-color: #f3b249; }
 
 tbody td {
   padding: 12px 15px;

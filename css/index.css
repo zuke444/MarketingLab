@@ -15,11 +15,12 @@
 @media(max-width:1230px){
     .pics3{
        width: 100%;
-       float: center;
-       margin-right: 0px;
+       padding-left: 0;
+       margin-right: 0;
+       justify-content: center;
     }
-    .h3uvod{
-        left: 50%;
+    #h3uvod{
+        left: 5%;
     }
 }
 

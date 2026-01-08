@@ -3,7 +3,7 @@ h3{
     font-family:"Momo Trust Display", "consolas", Arial, Helvetica, sans-serif;
     font-size: 30px;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     padding: 20px;
 }
 
@@ -11,6 +11,7 @@ h3{
     justify-content: center;
     margin-top: 50px;
     padding: 20px;
+    display: flex;
 }
 
 .hp{
@@ -84,13 +85,12 @@ h4{
     font-family: "Montserrat";
     font-size: 25px;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     margin-left: 70px;
     margin-top: 50px;
 }
 
 table{
-  justify-content: center;
   border-spacing: 0;
   overflow: hidden; 
   text-align: left;
@@ -101,7 +101,6 @@ table{
   margin-top: 80px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   font-family: "Montserrat";
-  align-items: flex-start;
 }
 
 thead th {
